@@ -202,7 +202,7 @@ async function generateWithModelFallback(params: {
   config?: any;
 }): Promise<string | null> {
   if (!ai) return null;
-  const models = ['gemini-2.5-flash', 'gemini-2.5-flash-lite'];
+  const models = ['gemini-3.1-flash-lite', 'gemini-flash-latest', 'gemini-3.8-flash'];
   for (let i = 0; i < models.length; i++) {
     const model = models[i];
     try {
